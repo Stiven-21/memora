@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="padre fondo1">
+  <div class="bloque">
+    <a href="/Categorias" class="bttn bttn-inicio fondo2">jugar</a>
   </div>
+</div>
+  <!--<a href="/Categorias" class="button">jugar</a>-->
+  <!--<div class="animation-area">
+    <ul class="box-area">
+      <li></li>
+    </ul>
+  </div>-->
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
+  mounted(){
+    localStorage.clear();
+
   }
 }
 </script>

@@ -1,30 +1,165 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  
   <router-view/>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/*fondos*/
+.fondo1{
+  background: url('assets/fondo/fondo1.jpg');
+}
+.fondo2{
+  background: url('assets/fondo/fondo2.jpg');
+}
+/*centrado*/
+.padre{
+  background-size: 135%;
   text-align: center;
-  color: #2c3e50;
+  width: 100%;
+  height: 93.6vh;
+  display: table;
+}
+.bloque{
+  display: table-cell;
+  vertical-align: middle;
+}
+.bloques{
+  width: 50%;
+  padding: 3px 3px 3px 5px;
+
+  display: inline-block;
+}
+/* imagen */
+.target-image{
+  width: 75%;
+  height: 75%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+img.card-img-top.girar {
+    animation: fadein 2s;
 }
 
-#nav {
-  padding: 30px;
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+/*animacion del boton*/
+.bttn{
+  background-size: 100%;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  color: white;
+  letter-spacing: 1px;
+  transition: all 300ms;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  font-family: 'Arial Black';
+  text-shadow: black -2px 2px;
+  border-bottom: 6px solid #000;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.bttn-inicio{
+  text-transform: uppercase;
+  border-radius: 20px;
+  width: 70%;
+  height: 60px;
+  font-size: 18px;
+}
+.bttn-cat{
+  border-radius: 10px;
+  width: 98%;
+  height: 70px;
+  font-size: small;
+}
+.bttn:hover{
+  transform: translateY(5px);
+  box-shadow: 0px 30px 5px -15px rgba(0,0,0,0.3);
+}
+/*FONDO*/
+.animation-area{
+  background: linear-gradient(to bottom, #3700ff, #110058);
+  width: 100%;
+  height: 100vh;
+}
+.box-area{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.box-area li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255,255,255,0.2);
+  animation: animate 35s linear infinite;
+  bottom: -150px;
+}
+.box-area li:nth-child(1){
+  left: 80%;
+  width: 80%;
+  height: 80%;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box-area li:nth-child(3){
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+.box-area li:nth-child(4){
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5){
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6){
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+@keyframes animate {
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-1000px) rotate(360deg);
+    opacity: 0;
+  }
 }
 </style>
