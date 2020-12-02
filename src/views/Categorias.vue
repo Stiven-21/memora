@@ -14,6 +14,7 @@
             <div class="bloques">
                 <button class="bttn bttn-cat fondo1" type="submit" v-on:click="cat='musica'" @click="siguiente()">musica</button>
             </div>
+            
         </div>
     </div>
 </template>
@@ -25,6 +26,9 @@ export default {
         return{
             cat: '',
         }
+    },
+    mounted(){
+        localStorage.removeItem("categoria")
     },
     methods: {
         siguiente(){

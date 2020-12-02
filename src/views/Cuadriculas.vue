@@ -28,6 +28,8 @@ export default {
         }
     },
     mounted(){
+        localStorage.removeItem("alto")
+        localStorage.removeItem("ancho")
         if (localStorage.getItem('categoria') === null) {
             this.$router.push("/Categorias")
         }

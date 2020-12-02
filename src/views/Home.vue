@@ -1,7 +1,7 @@
 <template>
 <div class="padre fondo1">
   <div class="bloque">
-    <a href="/Categorias" class="bttn bttn-inicio fondo2">jugar</a>
+    <button class="bttn bttn-inicio fondo2" type="submit" @click="siguiente()">jugar</button>
   </div>
 </div>
   <!--<a href="/Categorias" class="button">jugar</a>-->
@@ -19,6 +19,12 @@ export default {
   mounted(){
     localStorage.clear();
 
-  }
+  },
+  methods: {
+        siguiente(){
+            localStorage.setItem('categoria', this.cat);
+            this.$router.push("/Categorias")
+        }
+    }
 }
 </script>
