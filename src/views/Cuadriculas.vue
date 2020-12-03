@@ -14,6 +14,13 @@
             <div class="bloques">
                 <button class="bttn bttn-cat fondo2" type="submit" v-on:click="ancho=5,alto=6" @click="siguiente()">6x5</button>
             </div>
+            <br>
+            <div class="bloques">
+                <button class="bttn bttn-cat fondo2" type="submit" v-on:click="ancho=7,alto=8" @click="siguiente()">8x7</button>
+            </div>
+            <div class="bloques">
+                <button class="bttn bttn-cat fondo2" type="submit" v-on:click="ancho=8,alto=9" @click="siguiente()">9x8</button>
+            </div>
         </div>
     </div>
 </template>
