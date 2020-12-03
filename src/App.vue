@@ -88,7 +88,8 @@
 /* imagen */
 .target-image{
   width: 100%;
-  /*height: auto;*/
+  height: 25vh;
+  max-height: 150px;
   border-radius: 10px;
   border-style: solid;
   border-width: 1px;
@@ -122,6 +123,7 @@ img.card-img-top.girar {
   font-family: 'Arial Black';
   text-shadow: black -2px 2px;
   border-bottom: 6px solid #000;
+  position: relative;
 }
 .img-btn{
   width: 15px;
