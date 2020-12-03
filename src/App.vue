@@ -19,7 +19,17 @@
 }
 .swal-modal {
   background-color: rgb(0, 255, 21);
-  border: 3px solid rgb(0, 0, 0);
+  border: 3px solid rgb(255, 255, 255);
+}
+.swal-title {
+  margin: 0px;
+  font-size: 18px;
+  margin-bottom: 28px;
+  color: #000;
+  text-transform: uppercase;
+}
+.swal-text{
+  color: black;
 }
 .swal-footer {
   background-color: rgb(245, 248, 250);
@@ -34,9 +44,10 @@
   font-size: 12px;
   border: 1px solid #000000;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
 }
 .swal-button--reiniciar{
-  background-color: #fa583b,
+  background-color: #ff411f,
 }
 .swal-button--home {
   background-color: rgba(81, 252, 38, 0.952);
@@ -103,6 +114,19 @@ img.card-img-top.girar {
   font-family: 'Arial Black';
   text-shadow: black -2px 2px;
   border-bottom: 6px solid #000;
+}
+.img-btn{
+  width: 15px;
+  height: 15px;
+}
+.btton-pause{
+  vertical-align: middle;
+  border-radius: 5px;
+  border-color: rgb(0, 0, 0);
+  border-width: 2px;
+  border-style: solid;
+  padding: 3px 7px;
+  background: none;
 }
 .bttn-inicio{
   text-transform: uppercase;
