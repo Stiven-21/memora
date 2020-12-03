@@ -1,6 +1,6 @@
 <template>
-    <div class="prueba">
-        <div class="col-12">
+    <div class="prueba sinpadding">
+        <div class="col-12 align-middle">
             <h1 class="text-context">JUEGO</h1>
             <p>
                 <button class="btton-pause" @click="pause()"><img class="img-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAABxCAYAAADifkzQAAAD8ElEQVR4Xu2XMW4TURCG973dVUjECSJRpeIccAqEOITboHQUUYo0KehAXAAhcQM6joDokFInTZQiYGZsU8woDslMvM/F90ufaPDbz+9zcOi6e6x2437t6rvS1W/DMF70pZ/3ZUhT5Rw581L4Lpz0Xf/cP3sbp57qu/K+1Pfh31uMfq73q/es96337p8dWi11JodePZ7o7ej5In4tzzoW+V3vsQ1Tr6VfvZ7iPpb3Xmfe40GTA07lsN/+AZtEnjkvpX6q3bDnfVpOfRZe4uedN4nev3bwPvda6cor+STc+EOnQMT/yPMPvVPDFfF5q17edQq0g/bwUv/bKC/64Q+bkqEfzvd2nx54sRbbGZ8c1Nqfe8cp0R6iMnq3tZMXvWj1U/iPxXdkqa+9W4upx6a/A//HqscL73bXjvwhU7P8Yi8fvFiLicfH1hEVUTnybmsn0mf+gBaIx+dOf6dou148vni3FmgXL7d28pff+wNaoJfX6X/L2m4Qj6/erQXaxcutHRHNiJiBiBYixkfEDES0EDE+ImYgooWI8RExAxEtRIyPiBmIaCFifETMQEQLEeMjYgYiWogYHxEzENFCxPiImIGIFiLGR8QMRLQQMT4iZiCihYjxETEDES1EjI+IGYhoIWJ8RMxARAsR4yNiBiJaiBgfETMQ0ULE+IiYgYgWIsZHxAxEtBAxPiJmIKKFiPERMQMRLUSMj4gZiGghYnxEzEBECxHjI2IGIlqIGB8RMxDRQsT4iJiBiBYixkfEDES0EDE+ImYgooWI8RExAxEtRIyPiBmIaCFifETMQEQLEeMjYgYiWogYHxEzENFCxPiImIGIFiLGR8QMRLQQMT4iZiCihYjxETEDES1EjI+IGYhoIWJ8RMxARAsR4yNiBiJaiBgfETMQ0ULE+IiYgYgWIsZHxAxEtBAxPiJmIKKFiPERMQMRLUSMj4gZiGghYnxEzEBECxHjI2IGIlqIGB8RMxDR8tCIZ/6AFojHZ9Gp3m/i9fph8m4t0C5e7q4d+QOmppZepT94sRYTj4/q4x2nRlSOvNvayQtelq7e+EOmRC+tlvrau7WYeLxpHXHV46V3u2s78un76Q+aEpH+JX8+82IttjM+Oai1P/eOU6I9VMW73Tl50atWP43yqf8jzz/0Tg1XxOetennXKdAO2sNL3Wvyz8ipiP/2h24Seea8lPqpdsOe92k59Vl4iZ933iR6/9rB+zxocsBMPglXm/5OWHwHdvVannVcu3HXe2zD1GvpV6+nuI/lvdeZ9whN5PdF/J0c+m0Yxov+kd7ASvRS+C6c9F3/3D97G6ee6rvyvny8oP1c71fvWe9b790/+7b9BSmEsMM2AgNIAAAAAElFTkSuQmCC" alt="Pause"></button>
@@ -11,14 +11,14 @@
         </div>
     </div>
     <div v-for="(fila, indiceFila) in memorama" :key="indiceFila"
-        class="row">
-        <div :key="indiceFila+''+indiceImagen" class="col"
+        class="row sinpadding">
+        <div :key="indiceFila+''+indiceImagen" class="col paaa align-middle mh-100"
             v-for="(imagen, indiceImagen) in fila">
-            <div class="mb-3 prueba">
+            <div class="mb-1 prueba">
                 <img @click="voltear(indiceFila, indiceImagen)"
                     :class="{'girar': imagen.mostrar}"
                     :src="(imagen.mostrar ? imagen.ruta :
-                    NOMBRE_IMAGEN_OCULTA)" class="target-image">
+                    NOMBRE_IMAGEN_OCULTA)" class="target-image card-img-top h-75">
             </div>
         </div>
     </div>  
@@ -375,10 +375,6 @@ export default {
             }
             return a
         }
-
-
-
-
     }
 }
 </script>
