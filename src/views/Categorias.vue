@@ -9,7 +9,7 @@
             </div>
             <br>
             <div class="bloques">
-                <button class="bttn bttn-cat fondo1" type="submit" v-on:click="cat='vehiculos'" @click="siguiente()">vehiculos</button>
+                <button class="bttn bttn-cat fondo1" type="submit" v-on:click="cat='marcas'" @click="siguiente()">Logos</button>
             </div>
             <div class="bloques">
                 <button class="bttn bttn-cat fondo1" type="submit" v-on:click="cat='musica'" @click="siguiente()">musica</button>

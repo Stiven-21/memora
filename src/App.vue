@@ -88,7 +88,7 @@
 /* imagen */
 .target-image{
   width: 100%;
-  height: 25vh;
+  height: 20vh;
   max-height: 150px;
   border-radius: 10px;
   border-style: solid;
