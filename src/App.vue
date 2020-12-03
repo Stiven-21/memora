@@ -79,8 +79,10 @@
 }
 /* imagen */
 .target-image{
-  width: 90%;
-  height: 90%;
+  padding: auto;
+  width: 100%;
+  height: auto;
+  height: 25vh;
   border-radius: 10px;
   border-style: solid;
   border-width: 1px;
