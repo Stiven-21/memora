@@ -15,7 +15,38 @@
   padding: 0;
 }
 .prueba{
+  border-left: solid 3px white ;
+  border-right: solid 3px white ;
+  border-bottom: solid 3px white ;
   text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+.prueba-h1{
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Cooper Black';
+  font-size: 30px;
+}
+.prueba-imagen-movimiento{
+  width: 50px;
+  height: 30px;
+  padding: 0px;
+}
+.prueba-imagen-tiempo{
+  width: 25px;
+  height: 30px;
+  padding: 0px;
+}
+.prueba-cuadro{
+  border-radius: 5px;
+  width: 10%;
+  padding: 4px 15px;
+  background: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: 'Cooper Black';
 }
 /* swal */
 .swal-overlay {
@@ -51,10 +82,10 @@
   color: rgb(255, 255, 255);
 }
 .swal-button--reiniciar{
-  background-color: #ff411f,
+  background-color: #00ff0d,
 }
 .swal-button--home {
-  background-color: rgba(81, 252, 38, 0.952);
+  background-color: rgba(255, 0, 0, 0.952);
 }
 /*fondos*/
 .fondo1{
@@ -62,6 +93,12 @@
 }
 .fondo2{
   background: url('assets/fondo/fondo2.jpg');
+}
+.pa{
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: table;
 }
 /*centrado*/
 .padre{
@@ -88,8 +125,8 @@
 /* imagen */
 .target-image{
   width: 100%;
-  height: 20vh;
-  max-height: 150px;
+  height: 9.5vh;
+  max-height: 300px;
   border-radius: 10px;
   border-style: solid;
   border-width: 1px;
@@ -126,16 +163,17 @@ img.card-img-top.girar {
   position: relative;
 }
 .img-btn{
-  width: 15px;
-  height: 15px;
+  width: 11px;
+  height: 11px;
 }
 .btton-pause{
+  float: left;
   vertical-align: middle;
   border-radius: 5px;
-  border-color: rgb(0, 0, 0);
+  border-color: rgb(255, 255, 255);
   border-width: 2px;
   border-style: solid;
-  padding: 3px 7px;
+  padding: 2px 5px;
   background: none;
 }
 .bttn-inicio{
