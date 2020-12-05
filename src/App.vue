@@ -63,6 +63,10 @@
   color: #000;
   text-transform: uppercase;
 }
+.swal-icon{
+  height: 40%;
+  width: 40%;
+}
 .swal-text{
   color: black;
 }
@@ -125,7 +129,6 @@
 /* imagen */
 .target-image{
   width: 100%;
-  height: 9.5vh;
   max-height: 300px;
   border-radius: 10px;
   border-style: solid;
