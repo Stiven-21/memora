@@ -19,8 +19,9 @@
   border-right: solid 3px white ;
   border-bottom: solid 3px white ;
   text-align: center;
-  display: block;
-  border-radius: 5px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: auto;
 }
 .prueba-h1{
   text-transform: uppercase;
@@ -28,12 +29,7 @@
   font-family: 'Cooper Black';
   font-size: 30px;
 }
-.prueba-imagen-movimiento{
-  width: 50px;
-  height: 30px;
-  padding: 0px;
-}
-.prueba-imagen-tiempo{
+.prueba-imagen-texto{
   width: 25px;
   height: 30px;
   padding: 0px;
@@ -47,6 +43,15 @@
   border-width: 1px;
   border-color: black;
   font-family: 'Cooper Black';
+}
+.col{
+  height: 100%;
+  width: 100%;
+}
+.acomodar{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 /* swal */
 .swal-overlay {
@@ -99,10 +104,9 @@
   background: url('assets/fondo/fondo2.jpg');
 }
 .pa{
-  text-align: center;
   width: 100%;
   height: 100vh;
-  display: table;
+  display: grid;
 }
 /*centrado*/
 .padre{
@@ -129,7 +133,7 @@
 /* imagen */
 .target-image{
   width: 100%;
-  max-height: 300px;
+  max-height: 175px;
   border-radius: 10px;
   border-style: solid;
   border-width: 1px;
