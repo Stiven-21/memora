@@ -1,5 +1,4 @@
 <template>
-  
   <router-view/>
 </template>
 
@@ -136,10 +135,14 @@
   padding: 0px 2px;
 }
 /* imagen */
+.memory{
+  width: 50%;
+  margin: auto;
+  padding: 50px 0px;
+}
 .target-image{
   width: 99%;
   position: relative;
-  height: calc(100% - 100px);
   border-radius: 10px;
   border-style: solid;
   border-width: 1px;
@@ -158,6 +161,30 @@ img.card-img-top.girar {
     }
 }
 /*animacion del boton*/
+.retroceder{
+  float: left;
+  display: fixed;
+  background: red;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  border-color: white;
+  border-width: 2px;
+  border-bottom: 6px solid #000;
+  margin: auto;
+  padding: 2px 3px;
+}
+.casa{
+  float: right;
+  display: fixed;
+  background: red;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  border-color: white;
+  border-width: 2px;
+  border-bottom: 6px solid #000;
+  margin: auto;
+  padding: 2px 3px;
+}
 .bttn{
   background-size: 100%;
   display: block;
@@ -166,7 +193,6 @@ img.card-img-top.girar {
   margin: auto;
   color: white;
   letter-spacing: 1px;
-  transition: all 300ms;
   border-color: white;
   border-width: 2px;
   border-style: solid;
@@ -201,10 +227,6 @@ img.card-img-top.girar {
   width: 98%;
   height: 70px;
   font-size: small;
-}
-.bttn:hover{
-  transform: translateY(5px);
-  box-shadow: 0px 30px 5px -15px rgba(0,0,0,0.3);
 }
 @keyframes animate {
   0%{

@@ -1,15 +1,10 @@
 <template>
-<div class="padre fondo1">
-  <div class="bloque">
-    <button class="bttn bttn-inicio fondo2" type="submit" @click="siguiente()">jugar</button>
+  <div class="padre fondo1">
+    <div class="bloque">
+      <img src="../assets/fondo/memory.gif" alt="MEMORY" class="memory">
+      <button class="bttn bttn-inicio fondo2" type="submit" @click="siguiente()">jugar</button>
+    </div>
   </div>
-</div>
-  <!--<a href="/Categorias" class="button">jugar</a>-->
-  <!--<div class="animation-area">
-    <ul class="box-area">
-      <li></li>
-    </ul>
-  </div>-->
 </template>
 
 <script>

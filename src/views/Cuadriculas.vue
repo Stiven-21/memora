@@ -21,6 +21,13 @@
             <div class="bloques">
                 <button class="bttn bttn-cat fondo2" type="submit" v-on:click="ancho=8,alto=9" @click="siguiente()">9x8</button>
             </div>
+            <br>
+            <div class="bloques">
+                <button type="submit" class="retroceder"><img src="../assets/fondo/atras.png" alt="atras" width="40" height="30" @click="atras()"></button>
+            </div>
+            <div class="bloques">
+                <button type="submit" class="casa"><img src="../assets/fondo/home.png" alt="atras" width="45" height="30" @click="casa()"></button>
+            </div>
         </div>
     </div>
 </template>
@@ -46,6 +53,12 @@ export default {
             localStorage.setItem('alto', this.alto);
             localStorage.setItem('ancho', this.ancho);
             this.$router.push("/Juego")
+        },
+        atras(){
+            this.$router.push("/Categorias")
+        },
+        casa(){
+            this.$router.push("/")
         }
     }
 }
