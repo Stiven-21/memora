@@ -21,7 +21,7 @@
   text-align: center;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  height: auto;
+  height: 100px;
 }
 .prueba-h1{
   text-transform: uppercase;
@@ -47,11 +47,15 @@
 .col{
   height: 100%;
   width: 100%;
+  margin: auto;
+  position: relative;
 }
-.acomodar{
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+.paaa img{
+  position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
 }
 /* swal */
 .swal-overlay {
@@ -133,7 +137,8 @@
 /* imagen */
 .target-image{
   width: 100%;
-  max-height: 175px;
+  position: relative;
+  height: calc(100% - 100px);
   border-radius: 10px;
   border-style: solid;
   border-width: 1px;

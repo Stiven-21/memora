@@ -2,7 +2,7 @@
     <div class="pa fondo1 ">
             <!--texto superior-->
             <div class="prueba row sinpadding mb-1 fondo2">
-                <div class="col align-middle">
+                <div class="col ">
                     <h1 class="prueba-h1">{{ categoria }}</h1>
                     <p>
                         <button class="btton-pause" @click="pause()"><img class="img-btn" src="../assets/fondo/pause.png" alt="Pause"></button>
@@ -14,14 +14,14 @@
 
             <!--cartas-->
             <div v-for="(fila, indiceFila) in memorama" :key="indiceFila"
-                class="row sinpadding">
-                <div :key="indiceFila+''+indiceImagen" class="col paaa acomodar"
+                class="row sinpadding ">
+                <div :key="indiceFila+''+indiceImagen" class="col paaa"
                     v-for="(imagen, indiceImagen) in fila">
                     <div class="mb-1 ">                            
                         <img  @click="voltear(indiceFila, indiceImagen)"
                             :class="{'girar': imagen.mostrar}"
                             :src="(imagen.mostrar ? imagen.ruta :
-                            NOMBRE_IMAGEN_OCULTA)" class="target-image card-img-top img-thumbnail">
+                            NOMBRE_IMAGEN_OCULTA)" class="target-image card-img-top img-thumbnail img-fluid">
                     </div>
                 </div>
             </div>
