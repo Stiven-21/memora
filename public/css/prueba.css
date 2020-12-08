@@ -1,0 +1,30 @@
+.prueba{
+    border-left: solid 3px white ;
+    border-right: solid 3px white ;
+    border-bottom: solid 3px white ;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: auto;
+  }
+  .prueba-h1{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Cooper Black';
+    font-size: 30px;
+  }
+  .prueba-imagen-texto{
+    width: 25px;
+    height: 30px;
+    padding: 0px;
+  }
+  .prueba-cuadro{
+    border-radius: 5px;
+    width: 10%;
+    padding: 4px 15px;
+    background: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-family: 'Cooper Black';
+  }

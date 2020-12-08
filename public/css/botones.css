@@ -1,0 +1,67 @@
+/*Botones*/
+  .retroceder{
+    float: center;
+    display: fixed;
+    background: red;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border-color: white;
+    border-width: 2px;
+    border-bottom: 6px solid #000;
+    margin: auto;
+    padding: 2px 3px;
+  }
+  .casa{
+    float: center;
+    display: fixed;
+    background: red;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border-color: white;
+    border-width: 2px;
+    border-bottom: 6px solid #000;
+    margin: auto;
+    padding: 2px 3px;
+  }
+  .bttn{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    color: white;
+    letter-spacing: 1px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    font-family: 'Arial Black';
+    text-shadow: black -2px 2px;
+    border-bottom: 6px solid #000;
+    position: relative;
+  }
+  .img-btn{
+    width: 11px;
+    height: 11px;
+  }
+  .btton-pause{
+    float: left;
+    vertical-align: middle;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-style: solid;
+    padding: 2px 5px;
+    background: none;
+  }
+  .bttn-inicio{
+    text-transform: uppercase;
+    border-radius: 20px;
+    width: 70%;
+    height: 60px;
+    font-size: 18px;
+  }
+  .bttn-cat{
+    border-radius: 10px;
+    width: 98%;
+    height: 70px;
+    font-size: small;
+  }
