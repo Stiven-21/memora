@@ -21,7 +21,7 @@
   text-align: center;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  height: 100px;
+  height: auto;
 }
 .prueba-h1{
   text-transform: uppercase;
@@ -45,17 +45,17 @@
   font-family: 'Cooper Black';
 }
 .col{
-  height: 100%;
-  width: 100%;
+  width: 99%;
+  height: 99%;
   margin: auto;
   position: relative;
 }
 .paaa img{
   position:absolute;
-    height:100%;
-    width:100%;
-    top:0px;
-    left:0px;
+  height:99%;
+  width:99%;
+  top:0px;
+  left:0px;
 }
 /* swal */
 .swal-overlay {
@@ -111,6 +111,7 @@
   width: 100%;
   height: 100vh;
   display: grid;
+  grid-template-rows: 100px auto;
 }
 /*centrado*/
 .padre{
@@ -136,7 +137,7 @@
 }
 /* imagen */
 .target-image{
-  width: 100%;
+  width: 99%;
   position: relative;
   height: calc(100% - 100px);
   border-radius: 10px;
