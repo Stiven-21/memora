@@ -1,5 +1,5 @@
 <template>
-    <div class="categorias padre fondo2">
+    <div class="padre fondo2">
         <div class="bloque">
             <div class="bloques">
                 <button class="bttn bttn-cat fondo1" type="submit" v-on:click="cat='animales'" @click="siguiente()">Animales</button>
